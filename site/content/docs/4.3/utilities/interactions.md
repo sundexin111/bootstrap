@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Interactions
-description: Utility classes that change how users interact with contents of a website. 
+description: Utility classes that change how users interact with contents of a website.
 group: utilities
 toc: false
 ---
@@ -14,4 +14,14 @@ Change the way in which the content is selected when the user interacts with it.
 <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
 <p class="user-select-auto">This paragraph has default select behavior.</p>
 <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+{{< /example >}}
+
+## Pointer events
+
+Bootstrap provides `dead` and `alive` classes to prevent or add element interactions.
+
+{{< example >}}
+<p><a href="#" class="dead">This link</a> is dead and can not be clicked.</p>
+<p><a href="#" class="alive">This link</a> is alive and can be clicked (this is default behaviour).</p>
+<p class="dead"><a href="#">This link</a> is dead and can not be clicked because the parent paragraph is dead. However, <a href="#" class="alive">this link</a> has an <code>alive</code> class and can be clicked.</p>
 {{< /example >}}
